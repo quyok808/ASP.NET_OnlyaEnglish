@@ -157,6 +157,105 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BE_Mobile.Controllers.VocabularyController",
+    "Method": "CreateWordAsync",
+    "RelativePath": "api/Vocabulary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newWord",
+        "Type": "BE_Mobile.Models.Word",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BE_Mobile.Models.Word",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BE_Mobile.Controllers.VocabularyController",
+    "Method": "GetWord",
+    "RelativePath": "api/Vocabulary/{term}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BE_Mobile.Models.Word",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BE_Mobile.Controllers.VocabularyController",
+    "Method": "UpdateWord",
+    "RelativePath": "api/Vocabulary/{term}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedWord",
+        "Type": "BE_Mobile.Models.Word",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BE_Mobile.Models.Word",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BE_Mobile.Controllers.VocabularyController",
+    "Method": "DeleteWord",
+    "RelativePath": "api/Vocabulary/{term}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BE_Mobile.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

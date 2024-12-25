@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "F:\\IT\\1-Mobile\\BE_Mobile\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|f:\\it\\1-mobile\\be_mobile\\be_mobile\\controllers\\vocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|solutionrelative:be_mobile\\controllers\\vocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|f:\\it\\1-mobile\\be_mobile\\be_mobile\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|solutionrelative:be_mobile\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|f:\\it\\1-mobile\\be_mobile\\be_mobile\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|solutionrelative:be_mobile\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|f:\\it\\1-mobile\\be_mobile\\be_mobile\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|solutionrelative:be_mobile\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|f:\\it\\1-mobile\\be_mobile\\be_mobile\\models\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{006F5AE5-F815-44FA-9E5B-7FB2CC646B44}|BE_Mobile\\BE_Mobile.csproj|solutionrelative:be_mobile\\models\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +42,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "BE_Mobile\\Properties\\launchSettings.json",
               "ToolTip": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Properties\\launchSettings.json",
               "RelativeToolTip": "BE_Mobile\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-23T07:52:25.223Z",
+              "WhenOpened": "2024-12-25T17:02:06.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VocabularyController.cs",
+              "DocumentMoniker": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Controllers\\VocabularyController.cs",
+              "RelativeDocumentMoniker": "BE_Mobile\\Controllers\\VocabularyController.cs",
+              "ToolTip": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Controllers\\VocabularyController.cs",
+              "RelativeToolTip": "BE_Mobile\\Controllers\\VocabularyController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAqwFsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T16:57:45.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Example.cs",
+              "DocumentMoniker": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Models\\Example.cs",
+              "RelativeDocumentMoniker": "BE_Mobile\\Models\\Example.cs",
+              "ToolTip": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Models\\Example.cs",
+              "RelativeToolTip": "BE_Mobile\\Models\\Example.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T16:44:05.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "BE_Mobile\\Controllers\\AuthController.cs",
-              "ToolTip": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "BE_Mobile\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Title": "Word.cs",
+              "DocumentMoniker": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Models\\Word.cs",
+              "RelativeDocumentMoniker": "BE_Mobile\\Models\\Word.cs",
+              "ToolTip": "F:\\IT\\1-Mobile\\BE_Mobile\\BE_Mobile\\Models\\Word.cs",
+              "RelativeToolTip": "BE_Mobile\\Models\\Word.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T07:52:00.829Z",
+              "WhenOpened": "2024-12-25T16:43:30.71Z",
               "EditorCaption": ""
             }
           ]
