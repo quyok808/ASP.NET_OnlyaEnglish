@@ -3,6 +3,10 @@ using BE_Mobile.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace BE_Mobile.Controllers
 {
@@ -11,10 +15,12 @@ namespace BE_Mobile.Controllers
 	public class AuthController : ControllerBase
 	{
 		private readonly ApplicationDbContext _context;
+        private readonly IConfiguration _configuration;
 
-		public AuthController(ApplicationDbContext context)
+        public AuthController(ApplicationDbContext context, IConfiguration configuration)
 		{
 			_context = context;
+			_configuration = configuration;
 		}
 
 		[HttpPost("register")]
@@ -47,6 +53,43 @@ namespace BE_Mobile.Controllers
 			// Tạo token hoặc session nếu cần
 			return Ok(new { message = "Login successful" });
 		}
-	}
 
+        [HttpGet("me")]
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            var username = User.Identity.Name; // Lấy username từ token
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.Username == username);
+
+            if (user == null)
+            {
+                return NotFound("User not found");
+            }
+
+            return Ok(new { user.Username, user.Email });
+        }
+
+        // Tạo JWT token
+        private string GenerateJwtToken(User user)
+        {
+            var claims = new[]
+            {
+        new Claim(JwtRegisteredClaimNames.Sub, user.Username),
+        new Claim(JwtRegisteredClaimNames.Email, user.Email),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+    };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])); // Lấy Key từ cấu hình
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                claims: claims,
+                expires: DateTime.Now.AddHours(1),
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+    }
 }

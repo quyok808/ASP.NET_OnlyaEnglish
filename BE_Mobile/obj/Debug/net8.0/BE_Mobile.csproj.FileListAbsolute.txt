@@ -173,3 +173,5 @@ F:\IT\1-Mobile\BE_Mobile\BE_Mobile\bin\Debug\net8.0\Newtonsoft.Json.dll
 F:\IT\1-Mobile\BE_Mobile\BE_Mobile\bin\Debug\net8.0\System.Management.dll
 F:\IT\1-Mobile\BE_Mobile\BE_Mobile\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
 F:\IT\1-Mobile\BE_Mobile\BE_Mobile\bin\Debug\net8.0\BCrypt.Net.dll
+F:\IT\1-Mobile\BE_Mobile\BE_Mobile\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\IT\1-Mobile\BE_Mobile\BE_Mobile\obj\Debug\net8.0\BE_Mobile.sourcelink.json
