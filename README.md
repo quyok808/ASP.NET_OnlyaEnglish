@@ -6,4 +6,4 @@
 
 **_2. Tạo api thêm xoá sửa bài học_**
 
-**_3. Tạo apu thêm xóa sửa từ vựng_**
+**_3. Tạo api thêm xóa sửa từ vựng_**
